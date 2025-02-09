@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merlion Code - Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="popup" id="signupPopup">
+            <div class="popup-content" id="step1">
+                <h2>CREATE ACCOUNT</h2>
+                <label for="full-name">Enter your name</label>
+                <input type="text" id="full-name" placeholder="First & Last Name" required>
+                
+                <label for="ic-number">Enter your IC number</label>
+                <input type="text" id="ic-number" placeholder="IC Number" required>
+                
+                <button class="next-btn" onclick="nextStep(2)">NEXT</button>
+            </div>
+
+            <div class="popup-content" id="step2" style="display: none;">
+                <h2>CREATE ACCOUNT</h2>
+                <label for="email">Enter your email</label>
+                <input type="email" id="email" placeholder="Email" required>
+                
+                <label for="password">Enter your password</label>
+                <input type="password" id="password" placeholder="Password" required>
+                
+                <label for="confirm-password">Re-enter your password</label>
+                <input type="password" id="confirm-password" placeholder="Re-enter Password" required>
+                
+                <button class="next-btn" onclick="nextStep(3)">NEXT</button>
+            </div>
+
+            <div class="popup-content" id="step3" style="display: none;">
+                <h2>CREATE ACCOUNT</h2>
+                <label for="display-name">Lastly, what should we call you?</label>
+                <input type="text" id="display-name" placeholder="A unique display name!" required>
+                
+                <button class="signup-btn" onclick="signupUser()">SIGNUP</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

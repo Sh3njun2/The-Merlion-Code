@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merlion Code - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="landing-page">
+        <div class="logo-container">
+            <img src="logo.png" alt="Merlion Code Logo">
+            <h1 class="title">THE <br> MERLION CODE</h1>
+        </div>
+        <button class="login-btn" onclick="openLoginPopup()">LOGIN</button>
+        <p>Don't have an account? <a href="#">Sign up here!</a></p>
+    </div>
+
+    <!-- Login Pop-up -->
+    <div class="popup" id="loginPopup">
+        <div class="popup-content">
+            <h2>LOGIN</h2>
+            <label for="ic-number">Enter your IC number</label>
+            <input type="text" id="ic-number" placeholder="IC number">
+            <label for="password">Enter your password</label>
+            <input type="password" id="password" placeholder="Password">
+            <button class="login-btn" onclick="loginUser()">LOGIN</button>
+            <button class="close-btn" onclick="closeLoginPopup()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
