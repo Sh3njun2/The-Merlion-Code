@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="styles/globals.css" />
+        <link rel="stylesheet" href="styles/style-map.css" />
+    </head>
+  <body>
+      
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSideBar()><a href="#"><img src="assets/close_50dp_4B0082_FILL0_wght400_GRAD0_opsz48.svg" alt="Close Menu"></a></li>
+            <li><a href="map.html" class="dm-sans-reg">Map</a></li>
+            <li><a href="#" class="dm-sans-reg">Inventory</a></li>
+            <li><a href="#" class="dm-sans-reg">Settings</a></li>
+            <li><a href="#" class="dm-sans-reg">Account</a></li>
+            <li><a href="#" class="dm-sans-reg">Logout</a></li>
+        </ul>
+        <ul>
+            <li>
+                <a href="map.html" class="ibm-plex-sans-bol logo">
+                    <p>THE</p>
+                    <h4>MERLION CODE</h4>
+                </a>
+            </li>
+            <li class="hideOnMobile"><a href="map.html" class="dm-sans-reg">Map</a></li>
+            <li class="hideOnMobile"><a href="#" class="dm-sans-reg">Inventory</a></li>
+            <li class="hideOnMobile"><a href="#" class="dm-sans-reg">Settings</a></li>
+            <li class="hideOnMobile"><a href="#" class="dm-sans-reg">Account</a></li>
+            <li class="hideOnMobile"><a href="#" class="dm-sans-reg">Logout</a></li>
+            <li class="menu-button" onclick=showSideBar()><a href="#"><img src="assets/menu_50dp_F5F5F5_FILL0_wght400_GRAD0_opsz48.svg" alt="Open Menu">
+            </a></li>
+        </ul>
+    </nav>
+
+
+
+    <div class="singapore">
+    <div class="overlap-group">
+        <img class="SG-1" src="assets/SG-01.svg" />
+        <img class="SG-2" src="assets/SG-02.svg" />
+        <img class="SG-3" src="assets/SG-03.svg" />
+        <img class="SG-4" src="assets/SG-04.svg" />
+        <img class="SG-5" src="assets/SG-05.svg" />
+        <a href="#"  onclick=showNGPopUp()><img class="marker-NG" src="assets/Marker.svg" /></a>
+        <a href="#"><img class="marker-HPV" src="assets/Marker.svg" /></a>
+        <a href="#"><img class="marker-BTRS" src="assets/Marker.svg" /></a>
+        <a href="#"><img class="marker-KWM" src="assets/Marker.svg" /></a>
+    </div>
+    </div>
+
+
+
+
+
+    <footer>
+        <p class="dm-sans-reg">Click on a location to find out more about the level!</p>
+    </footer>
+
+    <div id="popup-overlay"></div>
+
+      <section id="NG-popup">
+        <div class="popup-top">
+            <a href="#"><img src="assets/close_50dp_4B0082_FILL0_wght400_GRAD0_opsz48.svg" alt="Close Popup" onclick=hideNGPopUp()></a>
+            <h1 class="ibm-plex-sans-bol">NATIONAL<br>GALLERY</h1>
+        </div>
+        <div class="popup-middle">
+            <div>
+                <p class="dm-sans-reg">"Where history meets art."</p>
+                <img src="assets/croppedNG.png" alt="National Gallery Preview">
+            </div>
+            <div class="stats">
+                <img id="NGstarcount" src="" alt="Star Count: 0">
+                <ul>
+                    <li>
+                        <h2 class="ibm-plex-sans-med">Difficulty:</h2>
+                        <p class="ibm-plex-sans-reg">Moderate</p>
+                    </li>
+                    <li>
+                        <h2 class="ibm-plex-sans-med">Attempts Made:</h2>
+                        <p class="ibm-plex-sans-reg"><span id="attemptCountNG"></span></p>
+                    </li>
+                    <li>
+                        <h2 class="ibm-plex-sans-med">Highest Score:</h2>
+                        <p class="ibm-plex-sans-reg"><span id="highScoreNG"></span></p>
+                    </li>
+                    <li>
+                        <h2 class="ibm-plex-sans-med">Suspected Item:</h2>
+                        <img id="mane" src="" alt="Missing Piece">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a href="overview.html"><h2 class="dark-button ibm-plex-sans-med">BEGIN</h2></a>
+
+      </section>
+
+
+      <script src="scripts/map.js"></script>
+  </body>
+</html>

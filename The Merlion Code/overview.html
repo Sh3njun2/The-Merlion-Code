@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="styles/globals.css" />
+        <link rel="stylesheet" href="styles/style-overview.css" />
+    <body>
+        
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSideBar()><a href="#"><img src="assets/close_50dp_4B0082_FILL0_wght400_GRAD0_opsz48.svg" alt="Close Menu"></a></li>
+                <li><a href="map.html" class="dm-sans-reg">Map</a></li>
+                <li><a href="#" class="dm-sans-reg">Inventory</a></li>
+                <li><a href="#" class="dm-sans-reg">Settings</a></li>
+                <li><a href="#" class="dm-sans-reg">Account</a></li>
+                <li><a href="#" class="dm-sans-reg">Logout</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="map.html" class="ibm-plex-sans-bol logo">
+                        <p>THE</p>
+                        <h4>MERLION CODE</h4>
+                    </a>
+                </li>
+                <li class="hideOnMobile"><a href="map.html" class="dm-sans-reg">Map</a></li>
+                <li class="hideOnMobile"><a href="#" class="dm-sans-reg">Inventory</a></li>
+                <li class="hideOnMobile"><a href="#" class="dm-sans-reg">Settings</a></li>
+                <li class="hideOnMobile"><a href="#" class="dm-sans-reg">Account</a></li>
+                <li class="hideOnMobile"><a href="#" class="dm-sans-reg">Logout</a></li>
+                <li class="menu-button" onclick=showSideBar()><a href="#"><img src="assets/menu_50dp_F5F5F5_FILL0_wght400_GRAD0_opsz48.svg" alt="Open Menu">
+                </a></li>
+            </ul>
+        </nav>
+
+        <div id="overview-wrapper">
+            <div id="overview-tab">
+                <a href="#" id="start-quiz"><h2 class="light-button ibm-plex-sans-sem">START LEVEL</h2></a>
+                
+                <h1 class="ibm-plex-sans-bol">NATIONAL<br>GALLERY</h1>
+                
+                <div class="sketchfab-embed-wrapper"> 
+                    <iframe title="IP_formerCityHall" frameborder="5" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/2666b803974641a7ba7c6621e529b16c/embed?ui_theme=dark"> </iframe> 
+                    <h3 class="dm-sans-sem">Explore the Exterior!</h3>
+                </div>
+
+                <section class="descNG dm-sans-reg">
+                    <p>
+                        The National Gallery Singapore stands as a testament to the nation’s rich artistic and cultural heritage. Housed in the beautifully restored former Supreme Court and City Hall buildings, the gallery boasts the world’s largest public collection of Southeast Asian art. Beyond its stunning architecture, it tells the story of Singapore’s past and present through paintings, sculptures, and exhibitions that capture the region’s diverse voices. As you step inside, the echoes of history and creativity surround you—but somewhere in this vast institution, a missing piece of the Merlion awaits.
+                    </p>
+                </section>                
+            </div>
+        </div>
+
+        <div id="countdown-overlay" class="hidden ibm-plex-sans-bol">
+            <h1 id="countdown-text">3</h1>
+        </div>
+
+
+
+        <script src="scripts/overview.js"></script>
+    </body>
