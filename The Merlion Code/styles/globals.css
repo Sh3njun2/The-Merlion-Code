@@ -20,28 +20,28 @@ outline: -webkit-focus-ring-color auto 5px !important;
 /* Font styles and weights */
 
 .dm-sans-reg {
-    font-family: "DM Sans", sans-serif;
+    font-family: "DM Sans", sans-serif !important;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
   }
 
 .dm-sans-med {
-  font-family: "DM Sans", sans-serif;
+  font-family: "DM Sans", sans-serif !important;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
 }
 
 .dm-sans-sem {
-  font-family: "DM Sans", sans-serif;
+  font-family: "DM Sans", sans-serif !important;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
 }
 
 .dm-sans-bol {
-  font-family: "DM Sans", sans-serif;
+  font-family: "DM Sans", sans-serif !important;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -49,7 +49,7 @@ outline: -webkit-focus-ring-color auto 5px !important;
 
 
 .ibm-plex-sans-reg {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif !important;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -58,7 +58,7 @@ outline: -webkit-focus-ring-color auto 5px !important;
 }
 
 .ibm-plex-sans-med {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif !important;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
@@ -67,7 +67,7 @@ outline: -webkit-focus-ring-color auto 5px !important;
 }
 
 .ibm-plex-sans-sem {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif !important;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
@@ -76,7 +76,7 @@ outline: -webkit-focus-ring-color auto 5px !important;
 }
 
 .ibm-plex-sans-bol {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif !important;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -194,6 +194,7 @@ nav li:first-child {
   padding: 0.6rem 5rem;
   text-decoration: none;
   text-align: center;
+  text-wrap-style: pretty;
   border-radius: 50px;
   transition: background-color 0.3s, color 0.3s;
 }
@@ -211,6 +212,7 @@ nav li:first-child {
   padding: 0.6rem 5rem;
   text-decoration: none;
   text-align: center;
+  text-wrap-style: pretty;
   border-radius: 50px;
   transition: background-color 0.3s, color 0.3s;
 }

@@ -96,34 +96,26 @@ p {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8); /* Translucent black */
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 80px;
+    font-size: 200px;
     font-family: Arial, sans-serif;
     z-index: 1000;
-}
-
-.hidden {
-    display: none;
-}
-
-.fade-out {
-    animation: fadeOut 1s forwards;
-}
-
-
-
-@keyframes fadeOut {
-    from { opacity: 1; }
-    to { opacity: 0; visibility: hidden; }
-}
+}   
 
 
 
 @media(max-width: 768px) {
     #overview-wrapper{
-        width: auto;
+        width: 100%;
+    }
+}
+
+
+@media(max-width: 740px) {
+    #overview-wrapper {
+        margin-top: calc(100vh - 80px -1111.2px);
     }
 }

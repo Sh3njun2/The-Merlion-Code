@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="styles/globals.css" />
+        <link rel="stylesheet" href="styles/style-quiz.css" />
+    </head> 
+    <body>
+        
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSideBar()><a href="#"><img src="assets/close_50dp_4B0082_FILL0_wght400_GRAD0_opsz48.svg" alt="Close Menu"></a></li>
+                <li><a href="map.html" class="dm-sans-reg">Map</a></li>
+                <li><a href="#" class="dm-sans-reg">Inventory</a></li>
+                <li><a href="#" class="dm-sans-reg">Settings</a></li>
+                <li><a href="#" class="dm-sans-reg">Account</a></li>
+                <li><a href="#" class="dm-sans-reg">Logout</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="map.html" class="ibm-plex-sans-bol logo">
+                        <p>THE</p>
+                        <h4>MERLION CODE</h4>
+                    </a>
+                </li>
+                <li id="timer-bar-container">
+                    <div id="timer-bar"></div>
+                </li>
+
+                <li class="menu-button" onclick=showSideBar()>
+                    <a href="#"><img src="assets/menu_50dp_F5F5F5_FILL0_wght400_GRAD0_opsz48.svg" alt="Open Menu"></a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="quiz-wrapper">
+            <div id="quiz-tab">
+                <div id="quiz-content">
+                    <div id="quiz-header">
+                        <h2 id="question-number" class="ibm-plex-sans-bol"></h2>
+                        <h3 id="question" class="ibm-plex-sans-bol"></h3>                        
+                    </div>
+                    <div id="answer-buttons" class="btn-container dm-sans-med"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="scripts/quiz.js"></script>
+    </body>
+</html>
