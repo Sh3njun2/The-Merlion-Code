@@ -173,8 +173,8 @@ function endQuiz() {
     localStorage.setItem("quizResults", JSON.stringify(quizResults));
 
     // Track attempts
-    let attempts = localStorage.getItem("quizAttempts") || 0;
-    localStorage.setItem("quizAttempts", Number(attempts) + 1);
+    let attempts = localStorage.getItem("attemptsNG") || 0;
+    localStorage.setItem("attemptsNG", Number(attempts) + 1);
 
     // Redirect to results page
     window.location.href = "stats.html";

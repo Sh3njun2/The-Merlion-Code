@@ -52,7 +52,7 @@ const starsElement = document.getElementById("NGstarcount");
 
 const imageMap = {
     "0": "assets/0stars.svg",
-    "1": "assets/1star.svg",
+    "1": "assets/1stars.svg",
     "2": "assets/2stars.svg",
     "3": "assets/3stars.svg"
 };

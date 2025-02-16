@@ -2,9 +2,12 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> TMC - NG Level Overview </title>
+
         <link rel="stylesheet" href="styles/globals.css" />
         <link rel="stylesheet" href="styles/style-stats.css" />
-    </head>
+    </head> 
     <body>
         
         <div id="loading-wrapper">
@@ -39,14 +42,42 @@
 
         <div id="tab-divider"></div>
 
-
         <div id="stats-wrapper">
-            <div id="stats-tab"></div>
-        </div>
+            <div id="stats-tab">
+                <div id="stats-content">
+                    <h1 class="ibm-plex-sans-bol">NATIONAL<br>GALLERY</h1>
+                    <img id="NGstarCount" src="" alt="Stars Earned">
+                </div>
+                <div class="stats-stats">
+                    <div id="mane-retrieved">
+                        <img id="Retrieved" src="assets/mane-retrieved.png" alt="Mane Retrieved!">
+                        <p><span id="mane-retrieved-msg" class="dm-sans-reg">Retrieved!</span></p>
+                    </div>
 
+                    <ul>
+                        <li>
+                            <h2 class="ibm-plex-sans-med">Time Elapsed:</h2>
+                            <p class="ibm-plex-sans-reg"><span id="timeElapsed"></span></p>
+                        </li>
+                        <li>
+                            <h2 class="ibm-plex-sans-med">Accuracy Rate:</h2>
+                            <p class="ibm-plex-sans-reg"><span id="accuracy"></span></p>
+                        </li>
+                        <li>
+                            <h2 class="ibm-plex-sans-med">Score:</h2>
+                            <p class="ibm-plex-sans-reg"><span id="score"></span></p>
+                        </li>
+                    </ul>                    
+                </div>
+
+                <a href="overview.html" class="light-button ibm-plex-sans-sem">REPLAY</a>
+                <a href="map.html" class="light-button ibm-plex-sans-sem">RETURN TO MAP</a>
+
+
+            </div>
+        </div>
 
 
         <script src="scripts/global.js"></script>
         <script src="scripts/stats.js"></script>
     </body>
-</html>
