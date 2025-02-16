@@ -2,11 +2,18 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> TMC - NG Level Overview </title>
+
         <link rel="stylesheet" href="styles/globals.css" />
         <link rel="stylesheet" href="styles/style-overview.css" />
     </head> 
     <body>
         
+        <div id="loading-wrapper">
+            <iframe src="https://cdn.lottielab.com/l/2z5EJHwdjAGxv3.html" width="1200" height="900" frameborder="0"></iframe>
+        </div>
+
         <nav>
             <ul class="sidebar">
                 <li onclick=hideSideBar()><a href="#"><img src="assets/close_50dp_4B0082_FILL0_wght400_GRAD0_opsz48.svg" alt="Close Menu"></a></li>
@@ -33,6 +40,8 @@
             </ul>
         </nav>
 
+        <div id="tab-divider"></div>
+
         <div id="overview-wrapper">
             <div id="overview-tab">
                 <a href="quiz.html" id="start-quiz"><h2 class="light-button ibm-plex-sans-sem">START LEVEL</h2></a>
@@ -57,6 +66,6 @@
         </div>
 
 
-
+        <script src="scripts/global.js"></script>
         <script src="scripts/overview.js"></script>
     </body>

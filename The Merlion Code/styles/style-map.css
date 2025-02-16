@@ -17,7 +17,6 @@ body {
     overflow: hidden;
 }
 
-
 .singapore {
     width: 100vw;
     height: calc(100vh - 80px - 50px);
@@ -233,6 +232,16 @@ footer {
 footer * {
     padding: 5px;
 }
+
+
+
+
+
+
+
+
+
+
 
 @media(max-width: 924px) {
   #NG-popup {

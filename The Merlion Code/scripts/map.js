@@ -1,12 +1,4 @@
-function showSideBar() {
-    const sidebar = document.querySelector('.sidebar');
-    sidebar.style.display = 'flex';
-}
 
-function hideSideBar() {
-    const sidebar = document.querySelector('.sidebar');
-    sidebar.style.display = 'none';
-}
 
 function showNGPopUp() {
     const NGpopup = document.querySelector('#NG-popup');
@@ -97,3 +89,16 @@ if (localStorage.getItem("maneRetrieved") === null) {
   const maneElement = document.querySelector("#mane");
 
   maneElement.src = isManeDisplayed ? "assets/mane_alive.png" : "assets/mane_grey.png";
+
+
+
+var loader = document.getElementById("loading-wrapper");
+window.onload = () => {
+    setTimeout(() => {
+        loader.style.opacity = "0";
+
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 4500);
+    }, 4500)
+}

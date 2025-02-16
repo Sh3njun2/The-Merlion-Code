@@ -2,15 +2,22 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> TMC - Map/MainPage </title>
+
         <link rel="stylesheet" href="styles/globals.css" />
         <link rel="stylesheet" href="styles/style-map.css" />
     </head>
   <body>
-      
+
+    <div id="loading-wrapper">
+        <iframe src="https://cdn.lottielab.com/l/2z5EJHwdjAGxv3.html" width="1200" height="900" frameborder="0"></iframe>
+    </div>
+
     <nav>
         <ul class="sidebar">
             <li onclick=hideSideBar()><a href="#"><img src="assets/close_50dp_4B0082_FILL0_wght400_GRAD0_opsz48.svg" alt="Close Menu"></a></li>
-            <li><a href="map.html" class="dm-sans-reg">Map</a></li>
+            <li><a href="map.html" data-target="map.html" class="load-page dm-sans-reg">Map</a></li>
             <li><a href="#" class="dm-sans-reg">Inventory</a></li>
             <li><a href="#" class="dm-sans-reg">Settings</a></li>
             <li><a href="#" class="dm-sans-reg">Account</a></li>
@@ -18,12 +25,12 @@
         </ul>
         <ul>
             <li>
-                <a href="map.html" class="ibm-plex-sans-bol logo">
+                <a href="map.html" data-target="map.html" class="load-page ibm-plex-sans-bol logo">
                     <p>THE</p>
                     <h4>MERLION CODE</h4>
                 </a>
             </li>
-            <li class="hideOnMobile"><a href="map.html" class="dm-sans-reg">Map</a></li>
+            <li class="hideOnMobile"><a href="map.html" data-target="map.html" class="load-page dm-sans-reg">Map</a></li>
             <li class="hideOnMobile"><a href="#" class="dm-sans-reg">Inventory</a></li>
             <li class="hideOnMobile"><a href="#" class="dm-sans-reg">Settings</a></li>
             <li class="hideOnMobile"><a href="#" class="dm-sans-reg">Account</a></li>
@@ -91,11 +98,13 @@
                 </ul>
             </div>
         </div>
-        <a href="overview.html"><h2 class="dark-button ibm-plex-sans-med">BEGIN</h2></a>
-
+        <a href="overview.html">
+            <h2 class="dark-button ibm-plex-sans-med">BEGIN</h2>
+        </a>
       </section>
 
 
+      <script src="scripts/global.js"></script>
       <script src="scripts/map.js"></script>
   </body>
 </html>

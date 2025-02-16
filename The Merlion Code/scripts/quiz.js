@@ -1,12 +1,3 @@
-function showSideBar() {
-    const sidebar = document.querySelector('.sidebar');
-    sidebar.style.display = 'flex';
-}
-
-function hideSideBar() {
-    const sidebar = document.querySelector('.sidebar');
-    sidebar.style.display = 'none';
-}
 
 
 let timeLeft = 90; // Timer duration in seconds
@@ -154,7 +145,7 @@ function selectAnswer(selected) {
     }, 1000);
 }
 
-// This function ensures the quiz ends when the timer runs out
+// Ends quiz when the timer runs out
 function checkTime() {
     if (timeLeft <= 0) {
         endQuiz();
@@ -186,7 +177,8 @@ function endQuiz() {
     localStorage.setItem("quizAttempts", Number(attempts) + 1);
 
     // Redirect to results page
-    window.location.href = "results.html";
+    window.location.href = "stats.html";
+
 }
 
 // Calculate stars based on score

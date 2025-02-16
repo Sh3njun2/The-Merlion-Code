@@ -23,6 +23,11 @@ body {
     font-size: 32px;
 }
 
+#tab-divider {
+    height: 240px;
+    flex-grow: 1;
+}
+
 #overview-wrapper {
     position: relative;
     bottom: 0;
@@ -31,7 +36,7 @@ body {
     width: 768px;
     height: auto;
     z-index: 10;
-    margin-top: 242px;
+    margin-top: auto;
 }
 
 #overview-tab {
@@ -65,7 +70,7 @@ h3 {
     gap: 24px;
 }
 
-iframe {
+.sketchfab-embed-wrapper iframe {
     width: 540px;
     height: 360px;
     border: 5px solid #f5f5f5;
@@ -82,7 +87,7 @@ iframe {
 
 }
 
-p {
+.descNG p {
     font-size: 20px;
     width: 320px;
     text-wrap-style: pretty;
@@ -107,6 +112,10 @@ p {
 
 
 
+
+
+
+
 @media(max-width: 768px) {
     #overview-wrapper{
         width: 100%;
@@ -114,8 +123,8 @@ p {
 }
 
 
-@media(max-width: 740px) {
-    #overview-wrapper {
-        margin-top: calc(100vh - 80px -1111.2px);
+@media(max-width: 640px) {
+    .sketchfab-embed-wrapper iframe {
+        width: 84.375vw;
     }
 }
